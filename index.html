@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Farhat Bukhari offers SEO services including on-page SEO, off-page SEO, keyword research, meta tags, sitemap setup, SEMrush and Ahrefs research, and WordPress website development.">
+  <title>Farhat Bukhari | SEO Specialist</title>
+  <style>
+    :root{--purple:#5d3ca3;--deep:#21194f;--lav:#f2efff;--ink:#242344;--muted:#666783;--white:#fff;--line:#e6e1fb}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.65;background:#fff}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);z-index:10;border-bottom:1px solid #f0edfa}
+    nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-family:Georgia,serif;font-size:1.55rem;font-style:italic;font-weight:bold;color:var(--deep)}
+    .brand small{display:block;font:500 .72rem Arial,sans-serif;color:var(--muted);font-style:normal;letter-spacing:.02em}
+    .navlinks{display:flex;align-items:center;gap:25px;font-size:.92rem}
+    .navlinks a:hover{color:var(--purple)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 21px;border-radius:999px;background:var(--purple);color:white;font-weight:700;border:1px solid var(--purple);transition:.2s}
+    .btn:hover{transform:translateY(-2px);background:var(--deep)}
+    .btn.secondary{background:transparent;color:var(--purple)}
+    .hero{background:linear-gradient(115deg,#fbfaff 0%,#f1edff 100%);padding:80px 0 72px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:48px}
+    .eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.76rem;font-weight:800;color:var(--purple)}
+    h1,h2,h3{line-height:1.15;margin:0 0 18px}
+    h1{font:700 clamp(2.5rem,5vw,4.2rem)/1.08 Georgia,serif;color:var(--deep);letter-spacing:-.035em}
+    h2{font:700 clamp(2rem,3.5vw,2.8rem)/1.15 Georgia,serif;color:var(--deep);letter-spacing:-.02em}
+    h3{font-size:1.1rem}
+    p{margin:0 0 18px;color:var(--muted)}
+    .hero p{font-size:1.06rem;max-width:600px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:27px}
+    .hero-art{min-height:350px;border-radius:44% 56% 48% 52% / 47% 40% 60% 53%;background:radial-gradient(circle at 50% 35%,#fff 0,#e0d7ff 58%,#c9b9f5 100%);display:flex;align-items:center;justify-content:center;position:relative;padding:35px}
+    .hero-card{background:rgba(255,255,255,.88);border:1px solid #fff;border-radius:24px;padding:30px;text-align:center;box-shadow:0 18px 50px #49348a1c;max-width:310px}
+    .avatar{width:90px;height:90px;border-radius:50%;margin:0 auto 17px;display:grid;place-items:center;background:var(--lav);color:var(--purple);font-size:2.3rem}
+    .hero-card strong{display:block;font:700 1.45rem Georgia,serif;color:var(--deep)}
+    .hero-card span{font-size:.9rem;color:var(--muted)}
+    .floating{position:absolute;background:white;border:1px solid var(--line);border-radius:14px;padding:12px 16px;box-shadow:0 10px 30px #30215c12;font-size:.88rem;font-weight:700;color:var(--deep)}
+    .float-one{top:25px;right:0}.float-two{bottom:20px;left:0}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:white;border:1px solid var(--line);border-radius:20px;margin-top:-25px;position:relative;box-shadow:0 12px 35px #34205c0a}
+    .stat{padding:23px 15px;text-align:center;border-right:1px solid var(--line)}
+    .stat:last-child{border-right:0}
+    .stat b{display:block;color:var(--deep);font-size:1rem}
+    .stat span{font-size:.83rem;color:var(--muted)}
+    section{padding:82px 0}
+    .section-head{max-width:650px;margin-bottom:34px}
+    .section-head p{margin-bottom:0}
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service{padding:25px;border:1px solid var(--line);border-radius:18px;background:#fff;transition:.2s}
+    .service:hover{transform:translateY(-4px);box-shadow:0 15px 35px #3e2c7512}
+    .service-icon{width:48px;height:48px;display:grid;place-items:center;border-radius:15px;background:var(--lav);font-size:1.45rem;margin-bottom:18px}
+    .service p{font-size:.93rem;margin:0}
+    .about{background:#faf9ff}
+    .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:65px;align-items:center}
+    .about-art{min-height:300px;border-radius:28px;background:linear-gradient(135deg,#e7e0ff,#faf8ff);display:grid;place-items:center;text-align:center;padding:30px}
+    .book-stack{font-size:3.5rem;margin-bottom:12px}
+    .about-art strong{display:block;font:700 1.35rem Georgia,serif;color:var(--deep)}
+    .about-art span{color:var(--muted);font-size:.9rem}
+    .skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+    .pill{border:1px solid #dcd4f7;background:white;border-radius:999px;padding:8px 13px;font-size:.88rem;color:var(--deep)}
+    .tools-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+    .tool-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .tool{border:1px solid var(--line);border-radius:16px;padding:22px 12px;text-align:center;background:#fff}
+    .tool b{display:block;color:var(--deep);margin-top:7px}
+    .tool .symbol{font-size:1.8rem;color:var(--purple)}
+    .why{background:var(--lav)}
+    .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:32px}
+    .why-card{background:#fff;border-radius:16px;padding:22px}
+    .why-card .symbol{font-size:1.6rem}
+    .why-card h3{margin:10px 0;font-size:1rem}
+    .why-card p{font-size:.9rem;margin:0}
+    .contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:55px}
+    .contact-box{background:#faf9ff;border:1px solid var(--line);border-radius:22px;padding:28px}
+    .contact-email{display:inline-block;color:var(--purple);font-weight:700;overflow-wrap:anywhere}
+    form{display:grid;gap:14px}
+    label{font-size:.9rem;font-weight:700;color:var(--deep)}
+    input,textarea{width:100%;margin-top:6px;padding:13px 14px;border:1px solid #dcd8ef;border-radius:11px;font:inherit;background:white;color:var(--ink)}
+    textarea{min-height:125px;resize:vertical}
+    input:focus,textarea:focus{outline:2px solid #c6b5ff;border-color:var(--purple)}
+    footer{background:var(--deep);color:white;padding:30px 0}
+    .footer-row{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+    footer .brand{color:white}footer .brand small{color:#ddd8f5}
+    footer p{color:#d9d4f0;font-size:.82rem;margin:5px 0 0}
+    .copyright{border-top:1px solid #ffffff2b;margin-top:22px;padding-top:18px;font-size:.8rem;color:#d9d4f0}
+    @media(max-width:850px){.navlinks{gap:13px}.hero-grid,.about-grid,.tools-grid,.contact-grid{grid-template-columns:1fr}.hero{padding-top:55px}.hero-art{max-width:540px;width:100%;margin:auto}.services-grid{grid-template-columns:repeat(2,1fr)}.why-grid{grid-template-columns:repeat(2,1fr)}.about-grid{gap:30px}}
+    @media(max-width:600px){nav{padding:14px 0;align-items:flex-start;flex-direction:column}.navlinks{width:100%;overflow-x:auto;padding-bottom:4px;gap:18px}.navlinks .btn{white-space:nowrap;padding:9px 14px}.hero-grid{gap:30px}.hero-art{min-height:300px}.stats{grid-template-columns:repeat(2,1fr);margin-top:20px}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}section{padding:60px 0}.services-grid{grid-template-columns:1fr}.why-grid{grid-template-columns:1fr 1fr}.tool-list{grid-template-columns:1fr}.float-one{right:-4px}.float-two{left:-4px}}
+  </style>
+</head>
+<body>
+<header>
+  <nav class="wrap" aria-label="Main navigation">
+    <a class="brand" href="#home">Farhat Bukhari<small>SEO Specialist | WordPress & Web</small></a>
+    <div class="navlinks">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+      <a class="btn" href="#contact">Let's Work Together</a>
+    </div>
+  </nav>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Helping websites get discovered</div>
+        <h1>Grow Your Online Presence with Smart SEO</h1>
+        <p>Hi, I'm Farhat Bukhari. I have a Master's degree in Economics from Punjab University and SEO training in on-page optimization, off-page SEO, keyword research, and more.</p>
+        <div class="actions"><a class="btn" href="#services">Explore My Services&nbsp; →</a><a class="btn secondary" href="#contact">Contact Me</a></div>
+      </div>
+      <div class="hero-art" aria-label="SEO professional illustration">
+        <div class="floating float-one">↗ Search visibility</div>
+        <div class="hero-card"><div class="avatar">✦</div><strong>Farhat Bukhari</strong><span>SEO Specialist & WordPress Website Developer</span><p style="margin:15px 0 0;font-size:.9rem">Thoughtful SEO. Clear strategy. Better online visibility.</p></div>
+        <div class="floating float-two">⌕ Keyword research</div>
+      </div>
+    </div>
+  </section>
+  <div class="wrap stats" aria-label="Education and focus areas">
+    <div class="stat"><b>Master's Degree</b><span>Economics</span></div>
+    <div class="stat"><b>On-Page SEO</b><span>Content & meta tags</span></div>
+    <div class="stat"><b>Keyword Research</b><span>SEMrush & Ahrefs</span></div>
+    <div class="stat"><b>WordPress</b><span>Website development</span></div>
+  </div>
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">What I can help with</div><h2>My SEO Services</h2><p>Practical SEO support to help improve your website's structure, search visibility, and discoverability.</p></div>
+      <div class="services-grid">
+        <article class="service"><div class="service-icon">⌕</div><h3>On-Page SEO</h3><p>Optimize page content, headings, internal links, and page structure using SEO best practices.</p></article>
+        <article class="service"><div class="service-icon">↗</div><h3>Off-Page SEO</h3><p>Support off-page SEO planning and backlink research to help strengthen website authority.</p></article>
+        <article class="service"><div class="service-icon">⌘</div><h3>Keyword Research</h3><p>Find relevant search terms and understand search intent for your audience and business.</p></article>
+        <article class="service"><div class="service-icon">◇</div><h3>Meta Tags Optimization</h3><p>Write and improve page titles and meta descriptions to accurately represent your pages.</p></article>
+        <article class="service"><div class="service-icon">▤</div><h3>Sitemap Setup</h3><p>Help set up and check XML sitemaps so search engines can discover important pages.</p></article>
+        <article class="service"><div class="service-icon">◉</div><h3>SEMrush & Ahrefs Research</h3><p>Use SEO tools for keyword ideas, competitor research, and backlink analysis.</p></article>
+        <article class="service"><div class="service-icon">W</div><h3>WordPress Websites</h3><p>Create and organize WordPress websites with a focus on usability and SEO-friendly structure.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+      <div class="about-art"><div><div class="book-stack">▤</div><strong>Learning. Strategy. Growth.</strong><span>Economics background · SEO skills</span></div></div>
+      <div><div class="eyebrow">A little about me</div><h2>Hi, I'm Farhat Bukhari</h2><p>I hold a Master's degree in Economics from Punjab University and have completed SEO training. I enjoy learning how websites can become easier to find through thoughtful keyword research, useful content, and sound technical foundations.</p><p>My goal is to provide clear, careful SEO support tailored to each website's needs, while continuing to grow my skills and experience.</p><div class="skills" id="skills"><span class="pill">On-Page SEO</span><span class="pill">Off-Page SEO</span><span class="pill">Meta Tags</span><span class="pill">Sitemaps</span><span class="pill">Keyword Research</span><span class="pill">Competitor Research</span></div></div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap tools-grid">
+      <div><div class="eyebrow">My toolkit</div><h2>Tools I Use</h2><p>I use SEO tools to research keywords, explore competitors, and support website optimization.</p><p>Tool access and available features can vary by plan.</p></div>
+      <div class="tool-list"><div class="tool"><div class="symbol">◈</div><b>SEMrush</b></div><div class="tool"><div class="symbol">⌕</div><b>Ahrefs</b></div><div class="tool"><div class="symbol">W</div><b>WordPress</b></div></div>
+    </div>
+  </section>
+  <section class="why">
+    <div class="wrap"><div class="eyebrow">My approach</div><h2>Why Work With Me?</h2><p>Careful work, clear communication, and a focus on sustainable SEO practices.</p>
+      <div class="why-grid">
+        <div class="why-card"><div class="symbol">◎</div><h3>Detail-Oriented</h3><p>I pay attention to page structure, keywords, and metadata.</p></div>
+        <div class="why-card"><div class="symbol">♡</div><h3>Client-Focused</h3><p>I aim to understand your goals before suggesting next steps.</p></div>
+        <div class="why-card"><div class="symbol">✧</div><h3>SEO Best Practices</h3><p>I focus on helpful, user-friendly website improvements.</p></div>
+        <div class="why-card"><div class="symbol">↗</div><h3>Always Learning</h3><p>I keep building my knowledge as SEO tools and practices evolve.</p></div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="wrap contact-grid">
+      <div><div class="eyebrow">Let's connect</div><h2>Let's Improve Your Website Together</h2><p>Have a website or SEO project in mind? Send me an email and tell me a little about what you need.</p><div class="contact-box"><h3>Email me</h3><a class="contact-email" href="mailto:farhatbukhari138@gmail.com">farhatbukhari138@gmail.com</a><p style="margin:12px 0 0;font-size:.9rem">I look forward to hearing about your project.</p></div></div>
+      <div class="contact-box"><form id="contactForm"><div><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required placeholder="Enter your name"></div><div><label for="email">Your email</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com"></div><div><label for="message">How can I help?</label><textarea id="message" name="message" required placeholder="Tell me about your website or SEO project"></textarea></div><button class="btn" type="submit">Prepare Email&nbsp; →</button><p style="font-size:.82rem;margin:0">This form opens your email app with your message ready to send.</p></form></div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap"><div class="footer-row"><a class="brand" href="#home">Farhat Bukhari<small>SEO Specialist</small></a><div><strong>Let's work together</strong><p><a href="mailto:farhatbukhari138@gmail.com">farhatbukhari138@gmail.com</a></p></div><a class="btn secondary" style="color:white;border-color:#bcb0ee" href="#contact">Get in Touch →</a></div><div class="copyright">© <span id="year"></span> Farhat Bukhari. All rights reserved.</div></div></footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+    const subject = encodeURIComponent('SEO / Website enquiry from ' + name);
+    const body = encodeURIComponent('Name: ' + name + '\\nEmail: ' + email + '\\n\\nProject details:\\n' + message);
+    window.location.href = 'mailto:farhatbukhari138@gmail.com?subject=' + subject + '&body=' + body;
+  });
+</script>
+</body>
+</html>
